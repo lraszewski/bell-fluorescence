@@ -19,6 +19,10 @@
 	color: var(--text-color);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: linear-gradient(90deg, var(--blue) 0%, var(--pink) 50%, 
 	                            var(--yellow) 100%);
@@ -93,8 +97,7 @@ main {
 	display: grid;
 	gap: var(--gap);
 	max-width: var(--max-content-width);
-	margin: 0 auto;
-	margin-top: -5rem;
+	margin: -5rem auto 5rem;
 	position: relative;
 	z-index: 2;
 	grid-template-columns: 1fr 1fr;
