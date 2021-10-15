@@ -1,13 +1,14 @@
 :root {
-	--primary-color: rgba(237, 24, 95, 1);
-	--secondary-color: rgba(254, 191, 15, 1);
+	--blue: rgba(32,17,227,1);
+	--pink: rgba(237, 24, 95, 1);
+	--yellow: rgba(254, 191, 15, 1);
 	--text-color: rgba(0,0,0,0.8);
 	--date-color: rgba(0,0,0,0.4);
 	--gap: 1rem;
 	--radius: 1.5rem;
 	--nav-color: white;
 	--max-content-width: 1000px;
-	--shadow: 0px 0px 15px rgba(0,0,0,0.1);
+	--shadow: 0 0 1rem rgba(0,0,0,0.2);
 
 }
 
@@ -17,6 +18,11 @@
 	font-family: Helvetica, Arial, sans-serif;
 	box-sizing: border-box;
 	color: var(--text-color);
+}
+
+body {
+	background: linear-gradient(90deg, var(--blue) 0%, var(--pink) 50%, 
+	                            var(--yellow) 100%);
 }
 
 nav {
@@ -29,7 +35,7 @@ nav {
 	right: 0;
 	box-shadow: var(--shadow);
 	max-width: var(--max-content-width);
-	margin: 0 auto;
+	margin: var(--gap) auto;
 	z-index: 3;
 }
 
@@ -51,7 +57,6 @@ nav img {
 
 header {
 	height: 40rem;
-	background: linear-gradient(90deg, rgba(32,17,227,1) 0%, rgba(237,24,95,1) 50%, rgba(254,191,15,1) 100%);
 	position: relative;
 	z-index: 1;
 	text-align: center;
@@ -92,6 +97,10 @@ section {
 	background-color: white;
 }
 
+section img {
+	border-radius: calc(var(--radius) - 0.5rem);
+}
+
 article {
 	box-shadow: var(--shadow);
 	border-radius: var(--radius);
@@ -108,9 +117,9 @@ article {
 }
 
 .container {
-	background: linear-gradient(90deg, rgba(32,17,227,1) 0%, rgba(237,24,95,1) 50%, rgba(254,191,15,1) 100%);
-	/* background-color: rgba(242, 242, 242); */
+	background-color: rgba(242, 242, 242);
 	padding: var(--gap);
+	box-shadow: var(--shadow);
 }
 
 .articles {
