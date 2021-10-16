@@ -86,17 +86,6 @@ header img {
 	height: 50%;
 }
 
-/* main {
-	display: flex;
-	flex-direction: column;
-	gap: var(--gap);
-	max-width: var(--max-content-width);
-	margin: 0 auto;
-	margin-top: -5rem;
-	position: relative;
-	z-index: 2;
-} */
-
 main {
 	display: grid;
 	gap: var(--gap);
