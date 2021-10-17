@@ -37,14 +37,17 @@ nav {
 	padding: var(--gap);
 	border-radius: var(--radius);
 	background-color: var(--nav-color);
-	position: fixed;
+	/* position: fixed; */
 	top: var(--gap);
 	left: 0;
 	right: 0;
 	box-shadow: var(--shadow);
 	max-width: var(--max-content-width);
+	margin-top: var(--gap);
+	margin-bottom: var(--gap);
+	margin-left: auto;
+	margin-right: auto;
 	margin: var(--gap) auto;
-	z-index: 3;
 }
 
 nav ul {
@@ -147,6 +150,14 @@ article {
 
 .popover {
 	margin-top: -5rem;
+}
+
+.nav-buffer {
+	padding-left: var(--gap);
+	padding-right: var(--gap);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
 }
 
 /* Large devices (laptops/desktops, 1200px and up) */
