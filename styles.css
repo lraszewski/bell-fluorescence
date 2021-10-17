@@ -145,10 +145,6 @@ article {
 	grid-row: span 2;
 }
 
-.wide {
-	grid-column: span 2;
-}
-
 .popover {
 	margin-top: -5rem;
 }
@@ -160,5 +156,8 @@ article {
 	}
 	.articles {
 		grid-template-columns: 1fr 1fr;
+	}
+	.wide {
+		grid-column: span 2;
 	}
 } 
